@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("assests/backgrounImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: 40vw;
+  min-width: 320px;
+}
+
+.content {
+  width: 40vw;
+  height: 88vh;
+  background-color: whitesmoke;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoImgs {
+  position: relative;
+}
+
+.logiImg {
+  width: 75px;
+  height: auto;
+}
+
+.lightLogo {
+  width: 75px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content h3 {
+  color: #ff451c;
+  font-family: Inter;
+  margin-top: 10px;
+}
+
+.unSec {
+  position: relative;
+}
+
+.unSec label {
+  position: absolute;
+  top: 85px;
+  left: -10px;
+  color: #606060;
+  width: 30vw;
+  padding-left: 30px;
+  transition: top 0.3s ease;
+}
+.userName {
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 30vw;
+  border-radius: 10px;
+  border: none;
+  background-color: #e0dddd;
+  color: #606060;
+  margin-top: 70px;
+}
+
+.passwordSection {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  width: 18px;
+  height: auto;
+  top: 45px;
+  right: 10px;
+}
+
+.iconLight {
+  position: absolute;
+  width: 18px;
+  height: auto;
+  top: 45px;
+  right: 10px;
+  z-index: -1;
+}
+.password {
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 30vw;
+  border-radius: 10px;
+  border: none;
+  background-color: #e0dddd;
+  color: #606060;
+  margin-top: 30px;
+}
+
+.passwordSection label {
+  position: absolute;
+  top: 45px;
+  left: -10px;
+  color: #606060;
+  width: 30vw;
+  padding-left: 30px;
+  transition: top 0.3s ease;
+}
+
+.rememberMeAndForgotPw {
+  display: flex;
+  width: 31vw;
+  margin-top: 10px;
+  gap: 5px;
+  position: relative;
+}
+
+.rememberMeAndForgotPw h6 {
+  color: #606060;
+  font-size: x-small;
+  font-weight: 500;
+}
+
+.forgotPw {
+  position: absolute;
+  right: 0;
+}
+
+.btnSignIn {
+  padding: 10px;
+  width: 32vw;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff451c;
+  color: whitesmoke;
+  margin-top: 40px;
+}
+.orSection {
+  margin-top: 10px;
+}
+
+.orSection hr {
+  display: inline-block;
+  width: 14.5vw;
+}
+
+.orSection h6 {
+  display: inline-block;
+  font-size: xx-small;
+  color: #606060;
+}
+.signInWithG {
+}
+
+.google {
+  padding: 10px;
+  width: 32vw;
+  border-radius: 10px;
+  border: none;
+  background-color: whitesmoke;
+  color: #606060;
+  margin-top: 40px;
+  border: 1px solid #606060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.google h4 {
+  font-weight: 500;
+}
+
+.signInWithG img {
+  width: 25px;
+  height: auto;
+}
+
+h5 {
+  margin-top: 100px;
+  color: #606060;
+  font-size: smaller;
+}
+
+h5 a {
+  color: #606060;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+/* for tablets */
+@media only screen and (min-width: 424px) and (max-width: 769px) {
+  body {
+    background-position: 20vw;
+  }
+}
+
+/* for mobiles */
+@media only screen and (min-width: 319px) and (max-width: 426px) {
+  body {
+    background-position: -284px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .content {
+    width: auto;
+    background-color: unset;
+  }
+  .lightLogo {
+    z-index: 1;
+  }
+
+  .content h3 {
+    color: #e0dddd;
+  }
+  .unSec label {
+    color: whitesmoke;
+  }
+
+  .userName {
+    width: 80vw;
+    background-color: #fea38f;
+  }
+
+  .password {
+    width: 80vw;
+    background-color: #fea38f;
+  }
+
+  .passwordSection label {
+    color: whitesmoke;
+  }
+
+  .iconLight {
+    z-index: 1;
+  }
+
+  .rememberMeAndForgotPw {
+    width: 80vw;
+  }
+
+  .rememberMeAndForgotPw h6 {
+    color: whitesmoke;
+  }
+
+  .rememberMeAndForgotPw input {
+  }
+
+  .btnSignIn {
+    width: 83vw;
+  }
+
+  .orSection hr {
+    width: 30vw;
+    color: whitesmoke;
+  }
+
+  .orSection h6 {
+    color: #988a8a;
+  }
+
+  .google {
+    width: 80vw;
+    background-color: unset;
+    border: 1px solid whitesmoke;
+  }
+
+  .google h4 {
+    color: whitesmoke;
+  }
+
+  h5 {
+    color: whitesmoke;
+  }
+
+  h5 a {
+    color: whitesmoke;
+  }
+}
+
+.unSec input:focus + label {
+  font-size: xx-small;
+  top: 75px;
+}
+
+.passwordSection input:focus + label {
+  font-size: xx-small;
+  top: 35px;
+}
